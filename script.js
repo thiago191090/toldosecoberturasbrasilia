@@ -66,3 +66,33 @@ const cards = document.querySelectorAll('.card');
 cards.forEach(card => {
     observer.observe(card);
 });
+
+// ==========================================
+// Slider Escuro de Portfólio (Auto-Scroll)
+// ==========================================
+const portfolioTrack = document.querySelector('.portfolio-track');
+let isHovered = false;
+
+if (portfolioTrack) {
+    // Pausa o carrossel se o mouse estiver em cima
+    portfolioTrack.addEventListener('mouseenter', () => isHovered = true);
+    portfolioTrack.addEventListener('mouseleave', () => isHovered = false);
+
+    // Pausa também se o usuário tocar na tela do celular
+    portfolioTrack.addEventListener('touchstart', () => isHovered = true);
+    portfolioTrack.addEventListener('touchend', () => {
+        setTimeout(() => isHovered = false, 1500); // Volta a rodar 1.5s após o toque
+    });
+
+    // Função que desliza a barra 1 pixel por vez
+    setInterval(() => {
+        if (!isHovered) {
+            portfolioTrack.scrollLeft += 1;
+            
+            // Se chegar no final da rolagem, volta para o começo de forma invisível
+            if (portfolioTrack.scrollLeft >= (portfolioTrack.scrollWidth - portfolioTrack.clientWidth - 1)) {
+                portfolioTrack.scrollLeft = 0;
+            }
+        }
+    }, 25); // Velocidade do carrossel (quanto menor o número, mais rápido)
+}

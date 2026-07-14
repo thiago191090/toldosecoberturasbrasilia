@@ -540,35 +540,35 @@ footer {
     color: var(--white);
     text-align: center;
     padding: 140px 40px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 .page-header2 {
     background: linear-gradient(rgba(0, 91, 181, 0.274), rgba(0, 91, 181, 0.623)), url('images/banner-policarbonato.png') center/cover;
     color: var(--white);
     text-align: center;
     padding: 140px 40px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 .page-header3 {
     background: linear-gradient(rgba(0, 91, 181, 0.274), rgba(0, 91, 181, 0.623)), url('images/banner-cortinas.png') center/cover;
     color: var(--white);
     text-align: center;
     padding: 140px 40px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 .page-header4 {
     background: linear-gradient(rgba(0, 91, 181, 0.274), rgba(0, 91, 181, 0.623)), url('images/banner-telhas-termoacusticas.png') center/cover;
     color: var(--white);
     text-align: center;
     padding: 140px 40px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 .page-header5 {
     background: linear-gradient(rgba(0, 91, 181, 0.274), rgba(0, 91, 181, 0.623)), url('images/banner-sombreadores.png') center/cover;
     color: var(--white);
     text-align: center;
     padding: 140px 40px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .page-header h1 {
@@ -633,4 +633,105 @@ footer {
 .action-center {
     text-align: center;
     margin-top: 20px;
-}    
+}  
+
+/* =========================================
+   Slider de Projetos (Estilo Claro / Branco)
+   ========================================= */
+.portfolio-section {
+    background-color: var(--white); /* Fundo branco para integrar com o site */
+    padding: 80px 0;
+    text-align: center;
+}
+
+.portfolio-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.portfolio-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    color: var(--primary-color); /* Título na cor azul do site */
+}
+
+.portfolio-section p {
+    font-size: 1rem;
+    color: #666666; /* Subtítulo em cinza escuro elegante */
+    margin-bottom: 50px;
+}
+
+.portfolio-slider-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Efeito de fade (sombra branca) nas laterais do carrossel */
+.slider-fade {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100px;
+    z-index: 2;
+    pointer-events: none; /* Permite clicar nas fotos por trás do fade */
+}
+
+.slider-fade.left {
+    left: 0;
+    background: linear-gradient(to right, #ffffff 0%, transparent 100%); /* Sumindo no branco */
+}
+
+.slider-fade.right {
+    right: 0;
+    background: linear-gradient(to left, #ffffff 0%, transparent 100%); /* Sumindo no branco */
+}
+
+/* A pista que contém as fotos */
+.portfolio-track {
+    display: flex;
+    gap: 25px;
+    padding: 0 40px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    /* Esconde a barra de rolagem */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+}
+
+.portfolio-track::-webkit-scrollbar {
+    display: none; /* Chrome, Safari e Opera */
+}
+
+/* Os cartões individuais */
+.portfolio-card {
+    flex: 0 0 320px; /* Largura fixa de cada imagem */
+    text-align: left;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-5px);
+}
+
+.portfolio-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    /* Sombra mais suave e clara para fundo branco */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+}
+
+.portfolio-card h4 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: var(--primary-color); /* Texto do card em azul */
+}
+
+.portfolio-card span {
+    font-size: 0.85rem;
+    color: #777777;
+}
