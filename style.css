@@ -531,3 +531,106 @@ footer {
         flex-direction: column;
         gap: 15px;
     }
+
+/* =========================================
+   Páginas Internas (Ex: Toldos.html)
+   ========================================= */
+.page-header1 {
+    background: linear-gradient(rgba(0, 91, 181, 0.274), rgba(0, 91, 181, 0.623)), url('images/banner-toldos.png') center/cover;
+    color: var(--white);
+    text-align: center;
+    padding: 140px 40px;
+    margin-bottom: 40px;
+}
+.page-header2 {
+    background: linear-gradient(rgba(0, 91, 181, 0.274), rgba(0, 91, 181, 0.623)), url('images/banner-policarbonato.png') center/cover;
+    color: var(--white);
+    text-align: center;
+    padding: 140px 40px;
+    margin-bottom: 40px;
+}
+.page-header3 {
+    background: linear-gradient(rgba(0, 91, 181, 0.274), rgba(0, 91, 181, 0.623)), url('images/banner-cortinas.png') center/cover;
+    color: var(--white);
+    text-align: center;
+    padding: 140px 40px;
+    margin-bottom: 40px;
+}
+.page-header4 {
+    background: linear-gradient(rgba(0, 91, 181, 0.274), rgba(0, 91, 181, 0.623)), url('images/banner-telhas-termoacusticas.png') center/cover;
+    color: var(--white);
+    text-align: center;
+    padding: 140px 40px;
+    margin-bottom: 40px;
+}
+.page-header5 {
+    background: linear-gradient(rgba(0, 91, 181, 0.274), rgba(0, 91, 181, 0.623)), url('images/banner-sombreadores.png') center/cover;
+    color: var(--white);
+    text-align: center;
+    padding: 140px 40px;
+    margin-bottom: 40px;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.page-content .text-block {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: justify;
+    background: var(--white);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.page-content .text-block h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.page-content .text-block p {
+    margin-bottom: 15px;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+/* Galeria de Fotos */
+.gallery-section {
+    background: var(--light-bg);
+    padding-bottom: 80px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.gallery-item {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    height: 250px; /* Altura padrão para as fotos da galeria */
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que fotos verticais e horizontais fiquem padronizadas */
+    transition: transform 0.4s ease;
+    cursor: pointer;
+    display: block;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1); /* Efeito de zoom suave ao passar o mouse */
+}
+
+.action-center {
+    text-align: center;
+    margin-top: 20px;
+}    
