@@ -96,3 +96,37 @@ if (portfolioTrack) {
         }
     }, 25); // Velocidade do carrossel (quanto menor o número, mais rápido)
 }
+// ==========================================
+// Formulário de orçamento (envio por e-mail via FormSubmit)
+// ==========================================
+const contactForm = document.getElementById('contact-form');
+if (contactForm) {
+    const statusEl = document.getElementById('form-status');
+    const submitBtn = document.getElementById('form-submit');
+    contactForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Enviando...';
+        statusEl.className = 'form-status';
+        statusEl.textContent = '';
+        try {
+            const resp = await fetch(contactForm.action.replace('formsubmit.co/', 'formsubmit.co/ajax/'), {
+                method: 'POST',
+                headers: { 'Accept': 'application/json' },
+                body: new FormData(contactForm)
+            });
+            const data = await resp.json().catch(() => ({}));
+            if (!resp.ok || String(data.success) === 'false') throw new Error(data.message || 'erro');
+            contactForm.reset();
+            statusEl.classList.add('ok');
+            statusEl.textContent = 'Mensagem enviada! Em breve entraremos em contato.';
+            if (typeof gtag === 'function') gtag('event', 'generate_lead', { method: 'formulario' });
+        } catch (err) {
+            statusEl.classList.add('erro');
+            statusEl.textContent = 'Não foi possível enviar agora. Chame a gente no WhatsApp: (61) 98143-4486.';
+        } finally {
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Enviar por E-mail';
+        }
+    });
+}

@@ -39,6 +39,9 @@
   "@id": "https://toldosecoberturasbrasilia.com/#empresa",
   "name": "Toldos e Coberturas Brasília",
   "slogan": "Inovação em coberturas inteligentes",
+  "sameAs": [
+    "https://www.instagram.com/coberturas_brasilia/"
+  ],
   "url": "https://toldosecoberturasbrasilia.com/",
   "logo": "https://toldosecoberturasbrasilia.com/images/logo.png",
   "image": "https://toldosecoberturasbrasilia.com/images/banner1.jpg",
@@ -337,26 +340,38 @@
     <section id="orcamento" class="contact">
         <div class="container">
             <h2>Entre em contato ou mande seu orçamento por e-mail</h2>
-            <form action="#" method="POST" id="contact-form">
+            <form action="https://formsubmit.co/glaubersanches2011@gmail.com" method="POST" id="contact-form">
+                <input type="hidden" name="_subject" value="Novo orçamento pelo site - Toldos e Coberturas Brasília">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://toldosecoberturasbrasilia.com/#orcamento">
+                <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
                 <div class="input-group">
                     <div class="input-field">
                         <label for="nome">Nome *</label>
-                        <input type="text" id="nome" required>
+                        <input type="text" id="nome" name="Nome" required>
                     </div>
                     <div class="input-field">
                         <label for="sobrenome">Sobrenome</label>
-                        <input type="text" id="sobrenome">
+                        <input type="text" id="sobrenome" name="Sobrenome">
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="input-field">
+                        <label for="email">E-mail *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="telefone">Telefone / WhatsApp</label>
+                        <input type="tel" id="telefone" name="Telefone">
                     </div>
                 </div>
                 <div class="input-field">
-                    <label for="email">E-mail *</label>
-                    <input type="email" id="email" required>
+                    <label for="mensagem">Mensagem *</label>
+                    <textarea id="mensagem" name="Mensagem" rows="5" required placeholder="Conte o que você precisa: produto, local e medidas aproximadas."></textarea>
                 </div>
-                <div class="input-field">
-                    <label for="mensagem">Campo de texto</label>
-                    <textarea id="mensagem" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn-primary">Enviar por E-mail</button>
+                <button type="submit" class="btn-primary" id="form-submit">Enviar por E-mail</button>
+                <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
                 
                 <div class="contact-divider">
                     <span>OU FALE DIRETAMENTE</span>
@@ -400,8 +415,7 @@
             <div class="footer-col">
                 <h4>Redes Sociais</h4>
                 <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
-                    <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href="https://www.instagram.com/coberturas_brasilia/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i> @coberturas_brasilia</a>
                 </div>
             </div>
         </div>
