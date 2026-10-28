@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página não encontrada - Toldos e Coberturas Brasília</title>
+    <meta name="robots" content="noindex, follow">
+    <link rel="icon" href="/images/logo.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/style.css">
+    <script>
+    // Redireciona endereços antigos do WordPress / variações para a página certa
+    (function () {
+        var p = location.pathname.toLowerCase().replace(/\/index\.(html|php)$/, '/');
+        var slugs = ['toldos', 'toldos-policarbonato', 'toldos-cortinas', 'telhas-termoacusticas', 'sombreadores'];
+        for (var i = 0; i < slugs.length; i++) {
+            var s = slugs[i];
+            if (p === '/' + s + '.html' || p.indexOf('/' + s + '/') === 0 || p === '/' + s) {
+                location.replace('/' + s + '/'); return;
+            }
+        }
+        if (/^\/(index\.html|home\/?|inicio\/?|wp-admin|wp-login|wp-content|wp-includes|feed|comments|author|category|tag|page|\?p=)/.test(p) || location.search.indexOf('p=') > -1 || location.search.indexOf('page_id=') > -1) {
+            location.replace('/');
+        }
+    })();
+    </script>
+</head>
+<body>
+    <header>
+        <div class="top-bar"><p>Inovação em coberturas inteligentes</p></div>
+        <nav class="navbar">
+            <div class="logo"><a href="/"><img src="/images/logo.png" alt="Toldos e Coberturas Brasília" class="logotopo"></a></div>
+        </nav>
+    </header>
+    <section class="page-content">
+        <div class="container" style="text-align:center;padding:60px 16px;">
+            <h1>Página não encontrada</h1>
+            <p>O endereço que você acessou não existe mais. Veja nossos produtos:</p>
+            <p style="line-height:2.2;">
+                <a href="/">Home</a> ·
+                <a href="/toldos/">Toldos</a> ·
+                <a href="/toldos-policarbonato/">Policarbonato</a> ·
+                <a href="/toldos-cortinas/">Cortinas</a> ·
+                <a href="/telhas-termoacusticas/">Telhas Termoacústicas</a> ·
+                <a href="/sombreadores/">Sombreadores</a>
+            </p>
+            <br>
+            <a href="https://wa.me/5561981434486?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20fazer%20um%20orçamento!" class="btn-primary" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> Chamar no WhatsApp</a>
+        </div>
+    </section>
+</body>
+</html>

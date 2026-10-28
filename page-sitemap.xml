@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://toldosecoberturasbrasilia.com/</loc>
+    <lastmod>2026-10-28</lastmod>
+    <priority>1.0</priority>
+    <image:image><image:loc>https://toldosecoberturasbrasilia.com/images/banner1.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://toldosecoberturasbrasilia.com/toldos/</loc>
+    <lastmod>2026-10-28</lastmod>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://toldosecoberturasbrasilia.com/images/toldos.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://toldosecoberturasbrasilia.com/toldos-policarbonato/</loc>
+    <lastmod>2026-10-28</lastmod>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://toldosecoberturasbrasilia.com/images/policarbonato.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://toldosecoberturasbrasilia.com/toldos-cortinas/</loc>
+    <lastmod>2026-10-28</lastmod>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://toldosecoberturasbrasilia.com/images/cortinas.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://toldosecoberturasbrasilia.com/telhas-termoacusticas/</loc>
+    <lastmod>2026-10-28</lastmod>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://toldosecoberturasbrasilia.com/images/telha-termoacustica.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://toldosecoberturasbrasilia.com/sombreadores/</loc>
+    <lastmod>2026-10-28</lastmod>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://toldosecoberturasbrasilia.com/images/sombreadores.jpg</image:loc></image:image>
+  </url>
+</urlset>
